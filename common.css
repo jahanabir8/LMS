@@ -1,0 +1,13 @@
+/* =====login button===== */
+a.login__btn{
+    background: var(--bg--primary);
+    color: var(--white--primary);
+    font-size: var(--font--20);
+    line-height: 24px;
+    padding: 12px 32px;
+    display: inline-block;
+    border-radius: var(--radius--1);
+    font-family: var(--family--mont);    
+    font-weight: 500;
+}
+/* =====login button===== */

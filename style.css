@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+ul{padding: 0; margin: 0;}
+li{list-style: none;}
+.section__gap{margin-bottom: 230px;}
+.active{font-weight: 700 !important;}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 100%;
+        max-width: 1420px;
+    }
+}
+
+:root{
+    --bg--primary: linear-gradient(93.02deg, #FA5A00 6.18%, #FF4004 156.79%);
+
+    --family--mont: 'Montserrat', sans-serif;
+    --family--poppins: 'Poppins', sans-serif;
+    
+    --text--primary: #0C1F38;
+    --text--seconday: #F16126;
+
+    --white--primary: #fff;
+
+    --radius--1: 25px;
+
+
+    --font--11: 11px;
+    --font--12: 12px;
+    --font--14: 14px;
+    --font--16: 16px;
+    --font--18: 18px;
+    --font--20: 20px;
+    --font--22: 22px;
+    --font--24: 24px;
+}
+
+
+/* =====login button===== */
+a.login__btn{
+    background: var(--bg--primary);
+    color: var(--white--primary);
+    font-size: var(--font--20);
+    line-height: 24px;
+    padding: 12px 32px;
+    display: inline-block;
+    border-radius: var(--radius--1);
+    font-family: var(--family--mont);    
+    font-weight: 500;
+}
+/* =====login button===== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================== 
+        Home1 page css start here
+ =============================================== */
+
+ /* =====menu css start here===== */
+.menu__section{
+    font-family: var(--family--mont);
+}
+
+ .menu ul li {
+    margin-right: 50px;
+}
+
+.menu ul li a{
+    color: var(--text--primary);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+ /* =====menu css end here======= */
+
+/* =============================================== 
+        Home1 page css end here
+ =============================================== */
