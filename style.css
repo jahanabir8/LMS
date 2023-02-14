@@ -13,6 +13,9 @@ li{list-style: none;}
 .section__gap{margin-bottom: 230px;}
 .active{font-weight: 700 !important;}
 
+h1{font-size: 85px;}
+
+
 @media screen and (min-width: 1440px) {
     .container{
         width: 100%;
@@ -22,7 +25,7 @@ li{list-style: none;}
 
 :root{
     --bg--primary: linear-gradient(93.02deg, #FA5A00 6.18%, #FF4004 156.79%);
-
+    --color--primary : #F16126;
     --family--mont: 'Montserrat', sans-serif;
     --family--poppins: 'Poppins', sans-serif;
     
@@ -48,6 +51,7 @@ li{list-style: none;}
 /* =====login button===== */
 a.login__btn{
     background: var(--bg--primary);
+
     color: var(--white--primary);
     font-size: var(--font--20);
     line-height: 24px;
@@ -56,7 +60,15 @@ a.login__btn{
     border-radius: var(--radius--1);
     font-family: var(--family--mont);    
     font-weight: 500;
+    border: 2px solid var(--color--primary);
+    transition: 0.1s ease-in-out;
 }
+
+a.login__btn:hover{
+    background: transparent;
+    color: var(--color--primary);
+}
+
 /* =====login button===== */
 
 
@@ -77,6 +89,8 @@ a.login__btn{
  /* =====menu css start here===== */
 .menu__section{
     font-family: var(--family--mont);
+    z-index: 9;
+    padding: 20px 0;
 }
 
  .menu ul li {
@@ -88,6 +102,93 @@ a.login__btn{
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+}
+
+.mobile__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    /* height: 100vh; */
+    width: 50%;
+    background: linear-gradient(206.75deg, #ECF8FF 4.95%, #FBEEFF 50.21%, #FFFFFF 69.89%);
+    transform: translateX(-150%);
+    transition: 0.5s ease-in-out;
+}
+
+.show__menu{
+    transform: translateX(0);
+}
+
+.menuSVG{
+    font-size: var(--font--22);
+    font-weight: bold;
+}
+
+.mobile__menu .logo{
+    margin-bottom: 28px;
+}
+
+.mobile__menu .logo img{
+    width: 180px;
+}
+
+.mobile__menu .cross{
+    font-size: var(--font--22);
+    cursor: pointer;
+    
+}
+
+.mobile__menu ul li{
+    margin-bottom: 20px;
+}
+
+.mobile__menu ul li a{
+    font-size: var(--font--18);
+    color: var(--text--primary);
+}
+
+@media screen and (max-width: 1400px) {
+    .menu ul li{
+        margin-right: 30px;
+    }
+
+    .menu ul li a{
+        font-size: var(--font--16);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .menu ul li{
+        margin-right: 22px;
+    }
+
+    .menu ul li a{
+        font-size: var(--font--16);
+    }
+
+    .menu ul a.login__btn{
+        font-size: var(--font--16);
+        padding: 6px 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu__inner .logo img{
+        width: 180px !important;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .mobile__menu{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .mobile__menu ul a.login__btn{
+        font-size: var(--font--16);
+        padding: 6px 24px;
+    }
 }
  /* =====menu css end here======= */
 
