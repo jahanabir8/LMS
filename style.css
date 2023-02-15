@@ -13,6 +13,10 @@ li{list-style: none;}
 .section__gap{margin-bottom: 230px;}
 .active{font-weight: 700 !important;}
 
+h1{font-size: 85px; line-height: 100px; font-weight: 700;}
+h2{font-size: 80px; line-height: 94px; font-weight: 700;}
+h3{font-size: 50px; line-height: 70px; font-weight: 700;}
+
 h1{font-size: 85px;}
 
 
@@ -35,6 +39,7 @@ h1{font-size: 85px;}
     --white--primary: #fff;
 
     --radius--1: 25px;
+    --radius--2: 38px;
 
 
     --font--11: 11px;
@@ -51,7 +56,6 @@ h1{font-size: 85px;}
 /* =====login button===== */
 a.login__btn{
     background: var(--bg--primary);
-
     color: var(--white--primary);
     font-size: var(--font--20);
     line-height: 24px;
@@ -63,13 +67,24 @@ a.login__btn{
     border: 2px solid var(--color--primary);
     transition: 0.1s ease-in-out;
 }
-
 a.login__btn:hover{
     background: transparent;
     color: var(--color--primary);
 }
-
 /* =====login button===== */
+
+
+/* =====banner button===== */
+a.banner__btn{
+    font-size: var(--font--24);
+    padding: 12px 59px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: var(--radius--2);
+    font-family: var(--family--mont);
+    transition: 0.1s ease-in-out;
+}
+/* =====banner button===== */
 
 
 
@@ -191,6 +206,93 @@ a.login__btn:hover{
     }
 }
  /* =====menu css end here======= */
+
+
+ /* =====banner section css start here===== */
+.banner__section{
+    /* background-image: url(./assets/image/bg/home1.png);
+    background-repeat: no-repeat;
+    background-position: right; */
+    background: linear-gradient(101.29deg, #FFF9F1 0%, #D5EBF7 100%);
+}
+
+.banner__inner{
+    padding: 30px 0;
+}
+
+.banner__content h1{
+    color: var(--text--primary);
+    font-family: var(--family--mont);
+}
+
+.banner__content h1 span{
+    color: var(--color--primary);
+}
+
+.banner__content p{
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 30px;
+    font-family: var(--family--poppins);
+    margin: 55px 0 40px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.banner__buttons a:first-child{
+    margin-right: 20px;
+    background: var(--bg--primary);
+    border: 2px solid var(--color--primary);
+}
+
+.banner__buttons a:first-child:hover{
+    color: var(--color--primary);
+}
+
+.banner__buttons a{
+    background: var(--text--primary);
+    border: 2px solid var(--text--primary);
+}
+
+.banner__buttons a:hover{
+    background: transparent;
+    color: var(--text--primary);
+}
+
+@media screen and (max-width: 1400px) {
+    .banner__content h1{
+        font-size: 65px;
+        line-height: 72px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner__content h1{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .banner__content p{
+        font-size: 16px;
+        margin: 25px 0;
+    }
+
+    a.banner__btn{
+        padding: 6px 42px;
+        font-size: var(--font--16)
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner__section{
+        background-image: url(./assets/image/section/home1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}
+
+ /* =====banner section css end here===== */
 
 /* =============================================== 
         Home1 page css end here
