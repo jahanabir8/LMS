@@ -11,7 +11,7 @@ a{text-decoration: none;}
 ul{padding: 0; margin: 0;}
 li{list-style: none;}
 .section__gap{margin-bottom: 230px;}
-.active{font-weight: 700 !important;}
+.menu__active{font-weight: 700 !important;}
 
 h1{font-size: 85px; line-height: 100px; font-weight: 700;}
 h2{font-size: 80px; line-height: 94px; font-weight: 700;}
@@ -34,6 +34,8 @@ h1{font-size: 85px;}
     --family--poppins: 'Poppins', sans-serif;
     
     --text--primary: #0C1F38;
+    --text--primaryDeep: #31374C;
+    --text--primaryLight : #8A9995;
     --text--seconday: #F16126;
 
     --white--primary: #fff;
@@ -50,6 +52,8 @@ h1{font-size: 85px;}
     --font--20: 20px;
     --font--22: 22px;
     --font--24: 24px;
+
+    --box--shadow1: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -272,7 +276,7 @@ a.banner__btn{
     }
 
     .banner__content p{
-        font-size: 16px;
+        font-size: var(--font--16);
         margin: 25px 0;
     }
 
@@ -293,6 +297,180 @@ a.banner__btn{
 }
 
  /* =====banner section css end here===== */
+
+
+ /* =====course section css start here==== */
+
+ h3.title{
+    color: var(--text--primary);
+    position: relative;
+ }
+
+ h3.title span{
+    color: var(--color--primary);
+ }
+
+ h3.title span.underline{
+    position: relative;
+    padding-bottom: 5px;
+ }
+
+ h3.title span.underline::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 110px;
+    background: #31374C;
+    border-radius: 10px;
+ }
+
+ /* tab css */
+
+ .nav-link:focus, .nav-link:hover{
+    color: unset;
+    border: unset;
+    outline: none;
+ }
+
+.tab__buttons {
+    margin: 100px 0 62px !important;
+    line-height: 29px;
+}
+
+ .tab__btn {
+    font-size: var(--font--24);
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-bottom: 8px;
+    margin-right: 85px;
+    position: relative;
+
+}
+
+.tab__btn::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: var(--bg--primary);
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.tab__btn:hover::before{
+    width: 100%;
+}
+
+.tab__btn:hover {
+    color: var(--color--primary);
+}
+
+.tab__buttons .active{
+    color: var(--color--primary);
+}
+
+.tab__buttons .active::before{
+    width: 100%;
+}
+ /* tab css */
+
+ .course__box{
+    color: unset !important;
+    box-shadow: var(--box--shadow1);
+    border-radius: 16px;
+    margin-bottom: 20px;
+ }
+
+.course__box .course__img{
+    position: relative;
+}
+
+.course__box .course__img img{
+    width: 100%;
+    width: 100%;
+}
+
+.course__img p.mentor{
+    position: absolute;
+    font-size: var(--font--12);
+    font-family: var(--family--mont);
+    bottom: -8%;
+    left: 58%;
+    font-weight: 600;
+    padding: 11px 15px;
+    background: #0A0762;
+    color:var(--white--primary);
+    border-radius: 5px;
+}
+
+.course__box .ratingReview{
+    margin-right: 10px;
+}
+
+.review  span{
+    color: #5F6765;
+    font-size: var(--font--12);
+}
+
+.course__box .ratingReview .rating{
+    margin-right: 4px;
+}
+
+.course__content{
+    padding: 22px 25px;
+    font-family: var(--family--mont);
+}
+
+.course__content h5 {
+    font-size: var(--font--18);
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text--primaryDeep);
+}
+
+.course__content > p{
+    font-size: var(--font--12);
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text--primaryLight);
+    margin: 10px 0 20px;
+    font-family: var(--family--poppins);
+}
+
+.course__content .review{
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.course__pricing p{
+    font-size: var(--font--14);
+    font-weight: 700;
+    line-height: 18px;
+    color: #143A4A;
+}
+
+.course__pricing a{
+    padding: 6px 8px;
+    font-size: var(--font--12);
+    font-weight: 500;
+    background: var(--bg--primary);
+    color: var(--white--primary);
+    border-radius: 5px;
+    border: 1px solid var(--color--primary);
+}
+
+.course__pricing a:hover{
+    background: transparent;
+    color: var(--color--primary);
+}
+ 
+/* =====course section css end here==== */
 
 /* =============================================== 
         Home1 page css end here
