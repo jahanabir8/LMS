@@ -10,7 +10,10 @@ h1, h2, h3, h4, h5, h6, p{margin: 0;}
 a{text-decoration: none;}
 ul{padding: 0; margin: 0;}
 li{list-style: none;}
-.section__gap{margin-bottom: 230px;}
+.section__gap{
+    /* margin-bottom: 230px; */
+    margin-bottom: 150px;
+}
 .menu__active{font-weight: 700 !important;}
 
 h1{font-size: 85px; line-height: 100px; font-weight: 700;}
@@ -89,6 +92,47 @@ a.banner__btn{
     transition: 0.1s ease-in-out;
 }
 /* =====banner button===== */
+
+
+/* =====course button===== */
+a.course__btn{
+    padding: 6px 8px;
+    font-size: var(--font--12);
+    font-weight: 500;
+    background: var(--bg--primary);
+    color: var(--white--primary);
+    border-radius: 5px;
+    border: 1px solid var(--color--primary);
+    transition: 0.1s ease-in-out;
+}
+
+a.course__btn:hover{
+    background: transparent;
+    color: var(--color--primary);
+}
+/* =====course button===== */
+
+
+/* =====section button====== */
+a.section__btn{
+    font-family: var(--family--mont);
+    font-size: 600;
+    font-size: var(--font--24);
+    line-height: 30px;
+    padding: 10px 21px;
+    background: var(--text--primary);
+    color: var(--white--primary);
+    border-radius: 15px;
+    display: inline-block;
+    border: 2px solid var(--text--primary);
+    transition: 0.1s ease-in-out;
+}
+
+a.section__btn:hover{
+    background: transparent;
+    color: var(--text--primary);
+}
+/* =====section button====== */
 
 
 
@@ -455,22 +499,102 @@ a.banner__btn{
     color: #143A4A;
 }
 
-.course__pricing a{
-    padding: 6px 8px;
-    font-size: var(--font--12);
-    font-weight: 500;
-    background: var(--bg--primary);
-    color: var(--white--primary);
-    border-radius: 5px;
-    border: 1px solid var(--color--primary);
-}
-
-.course__pricing a:hover{
-    background: transparent;
-    color: var(--color--primary);
-}
  
 /* =====course section css end here==== */
+
+
+/* =====about section css start here===== */
+.about__section{
+    padding: 80px 0;
+    background: #F6FBFF;
+}
+
+.imgSpan {
+    position: relative;
+}
+
+.imgSpan img{
+    z-index: 9;
+    position: relative;
+}
+
+.imgSpan span {
+    position: absolute;
+    width: 148px;
+    height: 180px;
+    border: 8px solid var(--color--primary);
+    z-index: 1;
+    left: -35px;
+    top: -35px;
+}
+
+.imgSpan.img2 span{
+    left: unset;
+    right: -35px;
+    border-color: #7B8BDA;
+}
+
+.imgSpan.img3 span{
+    bottom: -35px;
+    top: unset;
+    border-color: #0A0762;
+}
+
+.imgSpan.img4 span{
+    left: unset;
+    top: unset;
+    bottom: -35px;
+    right: -35px;
+    border-color: #F3728B;
+}
+
+.about__content{
+    color: #5F6765;
+    font-family: var(--family--poppins);
+}
+
+.about__content p{
+    width: 100%;
+    max-width: 498px;
+}
+
+.about__content p, .about__content ul{
+    font-size: var(--font--16);
+    font-weight: 400;
+    margin: 45px 0 25px;
+}
+
+.about__content ul{
+    margin-bottom: 40px;
+}
+
+.about__content ul li{
+    margin-bottom: 15px;
+    /* padding-left: 40px; */
+    position: relative;
+}
+
+.about__content ul li svg{
+    margin-right: 25px;
+}
+
+/* .about__content ul li::after{
+    position: absolute;
+    content: '\f061';
+    left: 0;
+} */
+
+@media screen and (max-width: 767px) {
+    .imgSpan span{
+        display: none;
+    }
+
+    .about__content h3.title{
+        margin-top: 60px;
+    }
+}
+
+/* =====about section css end here===== */
 
 /* =============================================== 
         Home1 page css end here
