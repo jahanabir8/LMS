@@ -429,22 +429,30 @@ a.section__btn:hover{
     box-shadow: var(--box--shadow1);
     border-radius: 16px;
     margin-bottom: 20px;
+    overflow: hidden;
  }
 
 .course__box .course__img{
     position: relative;
+    overflow: hidden;
+}
+
+.course__box:hover .course__img img{
+    transform: scale(1.1);
 }
 
 .course__box .course__img img{
     width: 100%;
     width: 100%;
+    transition: 0.3s ease-in-out;
 }
 
 .course__img p.mentor{
     position: absolute;
     font-size: var(--font--12);
     font-family: var(--family--mont);
-    bottom: -8%;
+    /* bottom: -8%; */
+    bottom: 8px;
     left: 58%;
     font-weight: 600;
     padding: 11px 15px;
