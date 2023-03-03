@@ -19,6 +19,7 @@ li{list-style: none;}
 h1{font-size: 85px; line-height: 100px; font-weight: 700;}
 h2{font-size: 80px; line-height: 94px; font-weight: 700;}
 h3{font-size: 50px; line-height: 70px; font-weight: 700;}
+h4{font-size: 45px; line-height: 52px; font-weight: 700;}
 
 h1{font-size: 85px;}
 
@@ -596,6 +597,35 @@ a.section__btn:hover{
 
 /* =====about section css end here===== */
 
+
+/* =====register section css start here===== */
+.count__down__section .count__box{
+    height: 101px;
+    width: 101px;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: var(--font--18);
+    /* color: #fff; */
+}
+
+.count__down__section h4{
+    margin-bottom: 124px;
+}
+/* =====register section css start here===== */
+
 /* =============================================== 
         Home1 page css end here
  =============================================== */
+
+ /* ========== */
+ /* .count__down__section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+} */
+
+.card.text-center {
+    box-shadow: 0 0 35px 5px rgb(156 156 156 / 31%);
+}
+  
+ /* ========== */

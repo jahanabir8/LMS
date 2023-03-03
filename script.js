@@ -12,3 +12,22 @@ cross.addEventListener('click', ()=>{
         mobile__menu.classList.remove('show__menu')
     }
 })
+
+// ==========
+
+$(".count__down__section")
+.countdown("2023/3/14", function(event) {
+  $('#day').text(
+    event.strftime('%D')
+  );
+  $('#hours').text(
+    event.strftime('%H')
+  );
+  $('#minutes').text(
+    event.strftime('%M')
+  );
+  $('#seconds').text(
+    event.strftime('%S')
+  );
+});
+// ==========
