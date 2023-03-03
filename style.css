@@ -612,8 +612,14 @@ a.section__btn:hover{
 }
 
 .count__down__section h4{
-    margin-bottom: 124px;
     color: var(--white--primary);
+}
+
+.count__down__section p{
+    margin: 38px 0;
+    font-size: var(--font--18);
+    color: #d5d5d5;
+    font-weight: 400;
 }
 
 .count__down__section .count__box{
@@ -639,11 +645,11 @@ a.section__btn:hover{
     padding: 35px 40px;
     background: #f5f5f5;
     text-align: center;
+    font-family: var(--family--poppins);
 }
 
 .register__form h5 {
     font-size: 30px;
-    margin-bottom: 40px;
     text-align: center;
     font-weight: 700;
 }
@@ -674,6 +680,7 @@ a.section__btn:hover{
     border-radius: var(--radius--2);
     color: var(--white--primary);
     transition: 0.1s ease-in-out;
+    font-family: var();
 }
 
 .register__form button:hover{
@@ -694,12 +701,14 @@ a.section__btn:hover{
 .footer__section{
     padding: 115px 0;
     background: var(--text--primary);
-    color: #fff;
+    color: #d5d5d5;
+    font-family: var(--family--poppins);
 }
 
 .footer__left p{
-    font-size: var(--font--20);
+    font-size: var(--font--18);
     margin: 42px 0 30px;
+    font-weight: 300;
 }
 
 .footer__left ul li{
@@ -723,6 +732,27 @@ a.section__btn:hover{
 .footer__left ul li a{
     font-size: 27px;
     color: #fff;
+}
+
+.footer__menu h5{
+    font-family: var(--family--mont);
+    font-size: var(--font--24);
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.footer__menu ul li{
+    margin-bottom: 20px;
+}
+
+.footer__menu ul li:last-child{
+    margin-bottom: 0;
+}
+
+.footer__menu ul li a{
+    color: #d5d5d5;
+    font-size: var(--font--18);
+    font-weight: 300;
 }
 /* =====footer section css end here===== */
 
