@@ -43,6 +43,11 @@ h1{font-size: 85px;}
     --text--seconday: #F16126;
 
     --white--primary: #fff;
+    --white--secondary: #f5f5f5;
+
+    --color--pink: #F3728B;
+    --color--vaiolet: #7B8BDA;
+    --color--sky: #1EACFF;
 
     --radius--1: 25px;
     --radius--2: 38px;
@@ -607,11 +612,61 @@ a.section__btn:hover{
 
 
 /* =====event section css start here===== */
+.event__inner .title{
+    margin-bottom: 94px;
+}
+
 .event__box .event__content{
     width: 100%;
-    max-width: 283px;
+    max-width: 328px;
     padding: 25px 20px;
     font-family: var(--family--mont);
+}
+
+.event__content__up{
+    background: var(--white--secondary);
+}
+
+.event__content__up p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.event__schedule{
+    font-size: var(--font--14);
+    line-height: 21px;
+    font-family: var(--family--poppins);
+}
+
+.event__schedule svg{
+    font-size: 22px;
+    color: var(--color--primary);
+    margin-right: 6px;
+}
+
+.event__content__up .date__box {
+    bottom: 0;
+    right: 0;
+    padding: 35px 34px;
+    background: var(--color--pink);
+    color: #fff;
+    font-size: var(--font--22);
+    line-height: 30px;
+}
+
+.date__box.date__box2{
+    background: var(--color--vaiolet);
+}
+
+.date__box.date__box3{
+    background: var(--color--sky);
+}
+
+.view__option a{
+    color: var(--color--primary);
+    font-size: var(--font--18);
+    font-weight: 500;
 }
 /* =====event section css start here===== */
 
