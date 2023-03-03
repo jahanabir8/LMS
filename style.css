@@ -606,6 +606,16 @@ a.section__btn:hover{
 /* =====about section css end here===== */
 
 
+/* =====event section css start here===== */
+.event__box .event__content{
+    width: 100%;
+    max-width: 283px;
+    padding: 25px 20px;
+    font-family: var(--family--mont);
+}
+/* =====event section css start here===== */
+
+
 /* =====register section css start here===== */
 .register__section{
     background-image: url(./assets/image/bg/registerBg.png);
