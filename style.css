@@ -599,33 +599,96 @@ a.section__btn:hover{
 
 
 /* =====register section css start here===== */
-.count__down__section .count__box{
-    height: 101px;
-    width: 101px;
-    border: 1px solid red;
-    border-radius: 50%;
-    font-size: var(--font--18);
-    /* color: #fff; */
+.register__section{
+    background-image: url(./assets/image/bg/registerBg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 48px 0;
+}
+
+.count__down__section{
+    width: 100%;
+    max-width: 600px;
 }
 
 .count__down__section h4{
     margin-bottom: 124px;
+    color: var(--white--primary);
 }
+
+.count__down__section .count__box{
+    height: 101px;
+    width: 101px;
+    border: 2px solid #FC4D02;
+    border-radius: 50%;
+    font-size: var(--font--18);
+    color: var(--white--primary);
+}
+
+.count__down__section .count__box:nth-child(2){
+    border-color: #B1E3DC;
+}
+.count__down__section .count__box:nth-child(3){
+    border-color: #BEB1E9;
+}
+.count__down__section .count__box:nth-child(4){
+    border-color: #FF1949;
+}
+
+.register__form{
+    padding: 35px 40px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.register__form h5 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.register__form input, .register__form select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: var(--font--20);
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.register__form select{
+    margin-bottom: 40px;
+}
+
+.register__form button{
+    margin: auto;
+    width: 240px;
+    text-align: center;
+    font-size: var(--font--20);
+    line-height: 29px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid var(--color--primary);
+    background: var(--color--primary);
+    border-radius: var(--radius--2);
+    color: var(--white--primary);
+    transition: 0.1s ease-in-out;
+}
+
+.register__form button:hover{
+    background: transparent;
+    color: var(--color--primary);
+}
+
+@media screen and (max-width: 575px) {
+    .register__form{
+        padding: 20px;
+    }
+}
+
 /* =====register section css start here===== */
 
 /* =============================================== 
         Home1 page css end here
  =============================================== */
-
- /* ========== */
- /* .count__down__section{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-} */
-
-.card.text-center {
-    box-shadow: 0 0 35px 5px rgb(156 156 156 / 31%);
-}
-  
- /* ========== */
