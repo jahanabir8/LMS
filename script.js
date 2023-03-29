@@ -14,6 +14,34 @@ cross.addEventListener('click', ()=>{
 })
 
 // ==========
+// swiper js
+var swiper = new Swiper(".instructionSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  // freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1200 : {
+      slidesPerView: 4
+    },
+    768: {
+      slidesPerView: 3
+    },
+    576:{
+      slidesPerView: 2
+    },
+    0:{
+      slidesPerView: 1
+    }
+  }
+});
+
+// ==========
+
+
 
 $(".count__down__section")
 .countdown("2023/3/14", function(event) {

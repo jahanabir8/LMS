@@ -13,6 +13,12 @@
     <!-- bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap5 -->
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- swiper js -->
+
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -468,7 +474,7 @@
 
 
     <!-- register section start here -->
-    <section class="register__section">
+    <section class="register__section section__gap">
         <div class="container">
             <div class="register__inner">
                 <div class="row">
@@ -476,7 +482,7 @@
                         <div class="count__down__section mb-5 mb-md-0">
                             <h4>Register Now</h4>
                             <p>Amet euismod vel suspendisse nunc, ut rutrum arcu eget utrum arcu eget pretium morbi integer quisque .</p>
-                            <div class="text-center d-flex justify-content-between align-items-center">
+                            <div class="text-center d-flex flex-wrap justify-content-around justify-content-sm-between align-items-center">
                                 <div class="count__box  text-center d-flex justify-content-center align-items-center">
                                     <div>
                                         <div id="day" class="fw-bolder"></div>
@@ -529,6 +535,132 @@
         </div>
     </section>
     <!-- register section end here -->
+
+
+    <!-- instructors section start here -->
+    <section class="instructors__section section__gap">
+        <div class="container">
+            <div class="instructor__inner">
+                <h3 class="title text-center">
+                     Our 
+                     <span class="underline"></span> 
+                     <span>Instructors</span> 
+                </h3>
+
+                <div class="swiper instructionSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="instructors">
+                                <div class="instructor__img">
+                                    <img src="assets/image/section/inst1.png" alt="img">
+                                </div>
+                                <div class="instructor__info">
+                                    <h5>Robert</h5>
+                                    <p>UI/UX Expert</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instructors">
+                                <div class="instructor__img">
+                                    <img src="assets/image/section/inst2.png" alt="img">
+                                </div>
+                                <div class="instructor__info">
+                                    <h5>Angelou</h5>
+                                    <p>Graphics Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instructors">
+                                <div class="instructor__img">
+                                    <img src="assets/image/section/inst3.png" alt="img">
+                                </div>
+                                <div class="instructor__info">
+                                    <h5>Smith</h5>
+                                    <p>Digital Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instructors">
+                                <div class="instructor__img">
+                                    <img src="assets/image/section/inst4.png" alt="img">
+                                </div>
+                                <div class="instructor__info">
+                                    <h5>Safika</h5>
+                                    <p>Motion Graphics</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instructors">
+                                <div class="instructor__img">
+                                    <img src="assets/image/section/inst4.png" alt="img">
+                                </div>
+                                <div class="instructor__info">
+                                    <h5>Safika</h5>
+                                    <p>Motion Graphics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- instructors section end here -->
+
+
+    <!-- news section start here -->
+    <section class="news__section section__gap">
+        <div class="container">
+            <div class="news__inner">
+                <h3 class="title text-center">Latest <span class="underline"></span> <span>News</span></h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="news__box">
+                            <div class="news__box__img">
+                                <img class="" src="assets/image/section/news1.png" alt="img">
+                            </div>
+                            <div class="news__content">
+                                <span>Educational</span>
+                                <h5>University Admissions Could Face Emergency Controls</h5>
+                                <a href="#!">More <img src="assets/image/icon/news-arrow.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="news__box">
+                            <div class="news__box__img">
+                                <img class="" src="assets/image/section/news2.png" alt="img">
+                            </div>
+                            <div class="news__content">
+                                <span>Learning</span>
+                                <h5>As Learning Moves Online, Trigger Warnings Must Too</h5>
+                                <a href="#!">More <img src="assets/image/icon/news-arrow.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="news__box">
+                            <div class="news__box__img">
+                                <img class="" src="assets/image/section/news3.png" alt="img">
+                            </div>
+                            <div class="news__content">
+                                <span>Online</span>
+                                <h5>Online Learning Can Prepare Students For A Fast-Changing</h5>
+                                <a href="#!">More <img src="assets/image/icon/news-arrow.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news section start here -->
 
 
     <!-- footer section start here -->
@@ -590,15 +722,13 @@
     </section>
     <!-- footer section end here -->
 
-
-
-    
-
     <!-- jquery --> <script src="jquery-3.6.0.min.js"></script>
     <!-- jqueryCountdown --> <script src="jquery.countdown.js"></script>
     <!-- fontawesome --><script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
     <!-- bootstrap5 --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jquey -->
+    <!-- swiper js --> <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 
     <script src="script.js"></script>
